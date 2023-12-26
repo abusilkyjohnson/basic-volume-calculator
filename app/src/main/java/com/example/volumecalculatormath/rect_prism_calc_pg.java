@@ -2,6 +2,7 @@ package com.example.volumecalculatormath;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +22,16 @@ public class rect_prism_calc_pg extends AppCompatActivity {
         EditText widthXML = findViewById(R.id.widthRectPrism);
         EditText heightXML = findViewById(R.id.hieghtRectPrism);
         TextView resultXML = findViewById(R.id.resultRectPrism);
+
+        Button back = findViewById(R.id.backButtonRect);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent homePageI = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(homePageI);
+            }
+        });
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override

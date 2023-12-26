@@ -26,8 +26,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="172dp"
         android:fontFamily="@font/childsplay"
-        android:text="The formual for volume sphere is \n L * W * H"
+        android:text="The cube formula for volume  is \n L * W * H"
         android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -47,13 +49,13 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/hieghtCuube"
+        android:id="@+id/heightCube"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
         android:ems="10"
-        android:hint="Enter your hieght"
+        android:hint="Enter your height"
         android:inputType="text"
         android:textColorHint="#706969"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,7 +72,7 @@
         android:inputType="text"
         android:textColorHint="#706969"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hieghtCuube" />
+        app:layout_constraintTop_toBottomOf="@+id/heightCube" />
 
     <EditText
         android:id="@+id/widthCube"
@@ -98,5 +100,16 @@
         app:layout_constraintBottom_toTopOf="@+id/resultCube"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/backButtonCube"
+        android:layout_width="76dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:text="back"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

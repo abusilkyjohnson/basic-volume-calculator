@@ -2,6 +2,7 @@ package com.example.volumecalculatormath;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,8 +20,18 @@ public class cube_calc_pg extends AppCompatActivity {
         Button submit = findViewById(R.id.submitButtCube);
         EditText lengthXML = findViewById(R.id.lengthCube);
         EditText widthXML = findViewById(R.id.widthCube);
-        EditText heightXML = findViewById(R.id.hieghtCuube);
+        EditText heightXML = findViewById(R.id.heightCube);
         TextView resultXML = findViewById(R.id.resultCube);
+
+        Button back = findViewById(R.id.backButtonCube);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent homePageI = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(homePageI);
+            }
+        });
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,10 +39,10 @@ public class cube_calc_pg extends AppCompatActivity {
 
                 String lengthInputXmlString = lengthXML.getText().toString();
                 String widthInputXmlString = widthXML.getText().toString();
-                String hieghInputXmlString = heightXML.getText().toString();
+                String heighInputXmlString = heightXML.getText().toString();
                 double lengthInputNum = Double.parseDouble(lengthInputXmlString);
                 double widthInputNum = Double.parseDouble(widthInputXmlString);
-                double heightInputNum = Double.parseDouble(hieghInputXmlString);
+                double heightInputNum = Double.parseDouble(heighInputXmlString);
 
                 double resultNum = heightInputNum * lengthInputNum * widthInputNum;
 
