@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         adapter = new AbuCustomAdapter(shapeArrayList,getApplicationContext());
 
         gridView.setAdapter(adapter);
-        gridView.setNumColumns(2);//this to make 2 colums could also do it in xml file attributes;
+        gridView.setNumColumns(2);//this to make 2 columns could also do it in xml file attributes;
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

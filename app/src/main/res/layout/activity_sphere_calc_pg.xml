@@ -4,14 +4,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/rainbow"
     tools:context=".sphere_calc_pg">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/sphereTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toStartOf="parent"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/childsplay"
+        android:text="Sphere Volume"
+        android:textSize="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/formulaIntroSphere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="172dp"
+        android:fontFamily="@font/childsplay"
+        android:text="The formual for volume sphere is \n 4(pi)"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/thirdPowerSphere"
+        android:layout_width="6dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="68dp"
+        android:text="3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/formulaIntroSphere"
+        app:layout_constraintStart_toStartOf="@+id/formulaIntroSphere"
+        app:layout_constraintTop_toTopOf="@+id/formulaIntroSphere" />
+
+    <TextView
+        android:id="@+id/resultSphere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="183dp"
+        android:fontFamily="@font/childsplay"
+        android:text="Result"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/userInputSphere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="71dp"
+        android:ems="10"
+        android:hint="Enter your radius"
+        android:inputType="text"
+        android:textColorHint="#706969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formulaIntroSphere" />
+
+    <Button
+        android:id="@+id/submitButtSphere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/childsplay"
+        android:text="OK"
+        android:textColor="#CF4977"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userInputSphere" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
