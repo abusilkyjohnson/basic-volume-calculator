@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 if(position == 3)
                 {
                     //getcontext we could have also use "this" keyword in place
-                    Intent cubeI = new Intent(getApplicationContext(), cylinder_calc_pg.class);
+                    Intent cubeI = new Intent(getApplicationContext(), cube_calc_pg.class);
                     startActivity(cubeI);
 
                 }

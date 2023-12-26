@@ -16,7 +16,6 @@ public class sphere_calc_pg extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sphere_calc_pg);
 
-        int radius;
         Button submit = findViewById(R.id.submitButtSphere);
         EditText userInputXml = findViewById(R.id.userInputSphere);
         TextView resultXML = findViewById(R.id.resultSphere);
