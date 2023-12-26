@@ -4,6 +4,99 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/rainbow"
     tools:context=".rect_prism_calc_pg">
+
+    <TextView
+        android:id="@+id/rectPrismTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/childsplay"
+        android:gravity="center"
+        android:text="Rectangular Prism Volume"
+        android:textSize="42dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/formulaIntroRectPrism"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/childsplay"
+        android:text="The formula for volume of a Rectangular Prism is \n L * W * H"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectPrismTitle" />
+
+    <TextView
+        android:id="@+id/resultRectPrism"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="116dp"
+        android:fontFamily="@font/childsplay"
+        android:text="Result"
+        android:textColor="#D24877"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/hieghtRectPrism"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Enter your hieght"
+        android:inputType="text"
+        android:textColorHint="#706969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formulaIntroRectPrism" />
+
+    <EditText
+        android:id="@+id/lengthRectPrism"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Enter your length"
+        android:inputType="text"
+        android:textColorHint="#706969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hieghtRectPrism" />
+
+    <EditText
+        android:id="@+id/widthRectPrism"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Enter your width"
+        android:inputType="text"
+        android:textColorHint="#706969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lengthRectPrism" />
+
+    <Button
+        android:id="@+id/submitButtRectPrism"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/childsplay"
+        android:text="OK"
+        android:textColor="#CF4977"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/widthRectPrism" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
