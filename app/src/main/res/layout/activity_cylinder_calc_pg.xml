@@ -19,6 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <TextView
         android:id="@+id/formulaIntroCylinder"
         android:layout_width="wrap_content"
@@ -29,7 +30,6 @@
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <TextView
         android:id="@+id/resultCylinder"
@@ -85,6 +85,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/backButtonCylinder"
+        android:layout_width="76dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:text="back"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/powerTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="@font/childsplay"
+        android:text="2"
+        app:layout_constraintBottom_toBottomOf="@+id/formulaIntroCylinder"
+        app:layout_constraintStart_toStartOf="@+id/formulaIntroCylinder" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

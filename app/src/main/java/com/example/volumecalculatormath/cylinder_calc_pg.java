@@ -2,6 +2,7 @@ package com.example.volumecalculatormath;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,16 @@ public class cylinder_calc_pg extends AppCompatActivity {
         EditText heightXML = findViewById(R.id.heightCylinder);
         EditText radiusXML = findViewById(R.id.radiusCylinder);
         TextView resultXML = findViewById(R.id.resultCylinder);
+
+        Button back = findViewById(R.id.backButtonCylinder);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent homePageI = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(homePageI);
+            }
+        });
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override

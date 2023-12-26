@@ -2,6 +2,7 @@ package com.example.volumecalculatormath;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +20,17 @@ public class sphere_calc_pg extends AppCompatActivity {
         Button submit = findViewById(R.id.submitButtSphere);
         EditText userInputXml = findViewById(R.id.userInputSphere);
         TextView resultXML = findViewById(R.id.resultSphere);
+
+        Button back = findViewById(R.id.backButtonSphere);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent homePageI = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(homePageI);
+            }
+        });
+
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
