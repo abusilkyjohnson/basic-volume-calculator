@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     //each item in the grid view is represented by a layout
 
-    //1. Adpater: GridView
+    //1. Adapter: GridView
     GridView gridView;
     //2. Data Source
     ArrayList<Shape> shapeArrayList;
