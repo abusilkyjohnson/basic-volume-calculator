@@ -50,7 +50,9 @@
         android:layout_marginBottom="183dp"
         android:fontFamily="@font/childsplay"
         android:text="Result"
+        android:textColor="#D24877"
         android:textSize="30dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
